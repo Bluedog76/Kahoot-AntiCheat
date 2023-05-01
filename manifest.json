@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Kahoot Anti Cheat",
+    "description": "Kahoot Anti Cheat made to stop people not play, inaportiate names, and more",
+    "version": "0.2",
+    "permissions": [
+      "tabs",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "scripts/popup.html"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://*.com/*"
+        ]
+      }
+    ]
+  }
