@@ -14,7 +14,7 @@
       {
         "js": ["scripts/content.js"],
         "matches": [
-          "https://*.com/*"
+          "https://play.Kahoot.it/*"
         ]
       }
     ]
