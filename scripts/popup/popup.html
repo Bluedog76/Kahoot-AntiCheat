@@ -1,25 +1,22 @@
 <!Doctype html>
 <body style="width:580px; height:600px"></body>
-<title>Settings</title>
-<div style="font-weight: bold;">  
-    <p>Settings</p>
-</div>
-
-<body>  
-    <div>
-    <input type="text" id="box" value="Type here to save"/><br/>
-    <input type="button" id="save" value="Save"/><br/>
-    <input type="button" id="load" value="Load"/><br/>
-    Saved item: <div id="savedList"></div>
+<html>
+    <title>Settings</title>
+    <div style="font-weight: bold;">  
+        <p>Settings</p>
     </div>
-</body>
 
-<iframe
-    width="100%"
-    hight="360em"
-    frameborder="0px"
-    style="border: 0px"
-    src="https://bing.com">
-</iframe>
+    <body>  
+        <div>
+        <input type="text" id="box" value="Type here to save"/><br/>
+        <input type="button" id="save" value="Save"/><br/>
+        <input type="button" id="load" value="Load"/><br/>
+        Saved item: <div id="savedList"></div>
+        </div>
+    </body>
+    <div id="wrap">
+        <iframe id="scaled-frame" src="/tool/"></iframe>
+    </div>
+</html>
 <script src="popup.js"></script>
 <link rel="stylesheet" href="popup.css">
