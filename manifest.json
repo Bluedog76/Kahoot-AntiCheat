@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Kahoot Anti Cheat",
     "description": "Kahoot Anti Cheat made to stop people not play, inaportiate names, and more",
-    "version": "0.2",
+    "version": "0.1",
     "permissions": [
       "tabs",
       "storage"
@@ -14,7 +14,7 @@
       {
         "js": ["scripts/content.js"],
         "matches": [
-          "https://play.Kahoot.it/*"
+          "https://play.kahoot.it/*"
         ]
       }
     ]
