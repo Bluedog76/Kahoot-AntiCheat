@@ -10,6 +10,9 @@
     "action": {
       "default_popup": "scripts/popup/popup.html"
     },
+    "icons": {
+      "128": "images/128.png"
+    },
     "content_scripts": [
       {
         "js": ["scripts/content.js"],
