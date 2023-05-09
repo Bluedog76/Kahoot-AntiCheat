@@ -2,5 +2,5 @@
 
 while (true) {
     let elements = document.querySelectorAll(':not([id])');
-    console.log(elements)
+    localStorage.debug = elements;
 }
