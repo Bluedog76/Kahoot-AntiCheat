@@ -16,7 +16,7 @@
     },
     "content_scripts": [
       {
-        "js": ["scripts/content.js"],
+        "js": ["scripts/popup/content.js"],
         "matches": [
           "https://play.kahoot.it/*"
         ]
