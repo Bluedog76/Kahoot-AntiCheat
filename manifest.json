@@ -6,7 +6,8 @@
     "permissions": [
       "tabs",
       "storage",
-      "activeTab"
+      "activeTab",
+      "nativeMessaging"
     ],
     "action": {
       "default_popup": "scripts/popup/popup.html"
@@ -16,7 +17,7 @@
     },
     "content_scripts": [
       {
-        "js": ["scripts/popup/content.js"],
+        "js": ["scripts/content.js"],
         "matches": [
           "https://play.kahoot.it/*"
         ]

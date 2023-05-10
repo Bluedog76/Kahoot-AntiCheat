@@ -11,7 +11,14 @@ function load() {
 document.getElementById("save").addEventListener("click", save);
 document.getElementById("load").addEventListener("click", load);
 
+
+//Send and recive to the content script (Host)
 while (true) {
-    var savedDiv2 = document.getElementById("savedList2");
-    savedDiv2.innerHTML = localStorage.debug;
+    chrome.runtime.onConnect.addListener(function(port) {
+        console.assert(port.name === "idSend");
+        port.onMessage.addListener(function(msg) {
+            var savedDiv2 = document.getElementById("savedList2")
+            savedDiv2.innerHTML = msg.item;
+        });
+      });
 }
