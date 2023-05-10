@@ -10,14 +10,14 @@
       "nativeMessaging"
     ],
     "action": {
-      "default_popup": "scripts/popup/popup.html"
+      "default_popup": "/scripts/popup/popup.html"
     },
     "icons": {
       "128": "images/128.png"
     },
     "content_scripts": [
       {
-        "js": ["scripts/content.js"],
+        "js": ["/scripts/content.js"],
         "matches": [
           "https://play.kahoot.it/*"
         ]
