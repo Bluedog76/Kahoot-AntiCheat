@@ -9,7 +9,7 @@
       "activeTab",
       "nativeMessaging"
     ],
-    "browser_action": {
+    "action": {
       "default_popup": "scripts/popup/popup.html"
     },
     "icons": {
