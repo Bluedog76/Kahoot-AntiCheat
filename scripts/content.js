@@ -4,10 +4,10 @@ function sleep(ms) {
 }
 
 for (var i = 0; i < Infinity; i++) {
+  sleep(5000)
   let itemId = document.querySelectorAll(':not([id])');
   var port = chrome.runtime.connect({name: "idSend"});
   port.postMessage({item: itemId});
-  sleep(5000)
   //port.onMessage.addListener(function(msg) {
     //if (msg.question === "Who's there?")
       //port.postMessage({answer: "Madame"});
