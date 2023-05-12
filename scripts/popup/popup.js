@@ -16,7 +16,7 @@ document.getElementById("load").addEventListener("click", load);
 
 
 //Send and recive to the content script (Host)
-for (var i = 0; i < Infinity; i++) {
+
     sleep(5000)
     chrome.runtime.onConnect.addListener(function(port) {
         console.assert(port.name === "idSend");
@@ -25,4 +25,3 @@ for (var i = 0; i < Infinity; i++) {
             savedDiv2.innerHTML = msg.item;
             });
     });
-}

@@ -3,8 +3,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-for (var i = 0; i < Infinity; i++) {
-  sleep(5000)
+
   let itemId = document.querySelectorAll(':not([id])');
   var port = chrome.runtime.connect({name: "idSend"});
   port.postMessage({item: itemId});
@@ -14,4 +13,4 @@ for (var i = 0; i < Infinity; i++) {
     //else if (msg.question === "Madame who?")
       //port.postMessage({answer: "Madame... Bovary"});
   //};
-}
+
