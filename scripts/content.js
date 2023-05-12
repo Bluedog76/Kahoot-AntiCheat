@@ -1,9 +1,13 @@
 //This is a content script running indavidualy on play.kahot.it
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 for (var i = 0; i < Infinity; i++) {
   let itemId = document.querySelectorAll(':not([id])');
   var port = chrome.runtime.connect({name: "idSend"});
   port.postMessage({item: itemId});
+  sleep(5000)
   //port.onMessage.addListener(function(msg) {
     //if (msg.question === "Who's there?")
       //port.postMessage({answer: "Madame"});

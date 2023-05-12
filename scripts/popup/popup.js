@@ -1,3 +1,6 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 function save() {
     var newItem = document.getElementById("box").value;
     localStorage.box = newItem;
