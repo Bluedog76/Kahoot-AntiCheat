@@ -16,7 +16,6 @@ document.getElementById("load").addEventListener("click", load);
 
 
 //Send and recive to the content script (Host)
-
     sleep(5000)
     chrome.runtime.onConnect.addListener(function(port) {
         console.assert(port.name === "idSend");
